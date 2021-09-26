@@ -6,7 +6,7 @@ terraform {
     }
   }
     backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "dmitrycx"
 
     workspaces {
       name = "eShopOnWeb-dev"
