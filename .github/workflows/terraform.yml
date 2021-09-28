@@ -25,6 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Azure Login
+        uses: Azure/login@v1
+        with: 
+          creds: ${{secrets.AZURE_CREDENTIALS}}
+
       # retrieves the Terraform CLI used in the GitHub action workflow.  
       # In addition, this step loads the TF_API_TOKEN secret as an environment variable, enabling the Terraform CLI to authenticate to Terraform Cloud.
       - name: Setup Terraform

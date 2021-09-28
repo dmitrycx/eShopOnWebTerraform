@@ -5,8 +5,8 @@ terraform {
       version = "=2.46.0"
     }
   }
-    backend "remote" {
-    organization = "REPLACE_ME"
+  backend "remote" {
+    organization = "dmitrycx"
 
     workspaces {
       name = "eShopOnWeb-dev"
