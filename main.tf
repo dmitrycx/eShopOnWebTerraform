@@ -5,7 +5,7 @@ terraform {
       version = "=2.46.0"
     }
   }
-    backend "remote" {
+  backend "remote" {
     organization = "dmitrycx"
 
     workspaces {
